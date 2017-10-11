@@ -1,0 +1,36 @@
+{
+  "name": "aquilafreitas.com",
+  "version": "1.0.0",
+  "description": "Main website for aquilafreitas.com",
+  "main": "server",
+  "config": {
+    "port": 1337,
+    "source": "/src"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "install": "node-gyp rebuild",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "clear && nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "www@git.aquilafreitas.com:vindas/main.git"
+  },
+  "keywords": [
+    "main",
+    "webiste",
+    "aquilafreitas.com",
+    "aquila",
+    "freitas",
+    "site"
+  ],
+  "author": "Áquila Freitas",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
