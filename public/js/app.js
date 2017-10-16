@@ -80,12 +80,12 @@ var Ghost = __webpack_require__(1),
 document.addEventListener(	"DOMContentLoaded",
 							function() {
 								// Start emojis
-								$elements = document.getElementsByClassName("emoji-this");
+								var $elements = document.getElementsByClassName("emoji-this");
 								for(var i = 0; i < $elements.length; i++)
 									$elements[i].addEventListener("click", function(e) {EmojiFALL.start(e, document);});
 
 								// Start ghost
-								$elements = document.getElementsByClassName("ghost-this");
+								var $elements = document.getElementsByClassName("ghost-this");
 								for(var i = 0; i < $elements.length; i++)
 									Ghost.start($elements[i], 1);
 							},
