@@ -32,6 +32,7 @@
     "express": "^4.15.4"
   },
   "devDependencies": {
+    "css-loader": "^0.28.7",
     "nodemon": "^1.11.0",
     "webpack": "^3.7.1"
   }

@@ -67,8 +67,12 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/**
- * Making sure that only executes after DOM is ready
+"use strict";
+
+
+/*
+ * Webpack starting point - 16/Oct/2017
+ * @author	Áquila Freitas
  */
 var Ghost = __webpack_require__(1),
 	EmojiFALL = __webpack_require__(2);

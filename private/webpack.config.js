@@ -5,5 +5,11 @@ module.exports = {
   output: {
     filename: "app.js",
     path: path.resolve(__dirname, "../public/js")
+  },
+  module: {
+    rules: [
+      { test: /\.css$/, use: "css-loader" }
+    ]
   }
+
 };

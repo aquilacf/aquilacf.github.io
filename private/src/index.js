@@ -1,6 +1,8 @@
-/**
- * Making sure that only executes after DOM is ready
- * @todo: comment here
+"use strict";
+
+/*
+ * Webpack starting point - 16/Oct/2017
+ * @author	Áquila Freitas
  */
 var Ghost = require("./js/ghost-typing.js"),
 	EmojiFALL = require("./js/emoji-fall.js");
