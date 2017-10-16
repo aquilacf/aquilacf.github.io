@@ -1,4 +1,4 @@
-var EmojiFALL = {
+module.exports = {
 
 	/**
 	 * Start emoji fall
@@ -88,14 +88,6 @@ var EmojiFALL = {
 
 };
 
-
 /**
  * Making sure that only executes after DOM is ready
  */
-document.addEventListener(	"DOMContentLoaded",
-							function() {
-								$elements = document.getElementsByClassName("emoji-this");
-								for(var i = 0; i < $elements.length; i++)
-									$elements[i].addEventListener("click", function(e) {EmojiFALL.start(e, document);});
-							},
-							false);

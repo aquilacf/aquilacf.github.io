@@ -1,4 +1,4 @@
-var Ghost = {
+module.exports = {
 
 	/**
 	 * Start ghost
@@ -140,15 +140,3 @@ var Ghost = {
 	}
 
 };
-
-
-/**
- * Making sure that only executes after DOM is ready
- */
-document.addEventListener(	"DOMContentLoaded",
-							function() {
-								$elements = document.getElementsByClassName("ghost-this");
-								for(var i = 0; i < $elements.length; i++)
-									Ghost.start($elements[i], 1);
-							},
-							false);

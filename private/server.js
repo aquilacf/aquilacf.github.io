@@ -6,7 +6,7 @@
  */
 
 var App = require("./package.json"),
-	express = require('express'),
+	express = require("express"),
 	server = express(),
 	dir = __dirname + App.config.source;
 
