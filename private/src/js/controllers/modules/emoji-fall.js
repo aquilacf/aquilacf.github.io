@@ -87,7 +87,3 @@ module.exports = {
 	}
 
 };
-
-/**
- * Making sure that only executes after DOM is ready
- */

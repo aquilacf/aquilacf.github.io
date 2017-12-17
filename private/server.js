@@ -3,12 +3,14 @@
 /*
  * Local development server - 15/Aug/2017
  * @author	Áquila Freitas
+ * @note	Not in use anymore. replaced by webpack-dev-server
+ * @deprecated
  */
 
-var App = require("./package.json"),
-	express = require("express"),
-	server = express(),
-	dir = __dirname + App.config.source;
+const 	App = require("./package.json"),
+		express = require("express"),
+		server = express(),
+		dir = __dirname + App.config.source;
 
 // Route static files
 server.use(express.static(dir));

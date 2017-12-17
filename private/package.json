@@ -5,14 +5,14 @@
   "main": "server",
   "config": {
     "port": 1337,
-    "source": "/src"
+    "source": "./src",
+    "filename": "app.js"
   },
   "scripts": {
-    "start": "node server.js",
     "install": "node-gyp rebuild",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "clear && nodemon server.js",
-    "build": "webpack"
+    "dev": "clear && npx webpack-dev-server",
+    "build": "npx webpack --config webpack.config.js",
+    "build-debug": "npx webpack --config webpack.config.js --debug"
   },
   "repository": {
     "type": "git",
@@ -28,12 +28,11 @@
   ],
   "author": "Áquila Freitas",
   "license": "MIT",
-  "dependencies": {
-    "express": "^4.15.4"
-  },
   "devDependencies": {
+    "clean-webpack-plugin": "^0.1.17",
     "css-loader": "^0.28.7",
-    "nodemon": "^1.11.0",
-    "webpack": "^3.7.1"
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7",
+    "webpack-merge-and-include-globally": "^1.0.0"
   }
 }
