@@ -1,3 +1,21 @@
+/**
+ * Invention class
+ */
 export class Invention {
-    name:String
+
+    /**
+     * Name of the invention
+     */
+    name: String;
+
+    /**
+     * Year invented
+     */
+    year: String;
+
+    /**
+     * Name of the inventor
+     */
+    inventor: String
+
 }
