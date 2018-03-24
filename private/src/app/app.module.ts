@@ -1,23 +1,32 @@
 /**
- * Imports
+ * App main module - 24/Mar/2018
+ * @author Áquila Freitas <aquilacf@protonmail.com>
  */
 
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+/**
+ * Imports
+ */
+import { NgModule }         from "@angular/core";
+import { BrowserModule }    from "@angular/platform-browser";
 
-import { FormsModule }   from '@angular/forms';
-import { InventionsComponent } from './inventions/inventions.component';
+import {RoutingModule}      from "./config/routing.module";
+import {HomeModule}         from "./home/home.module";
 
+/**
+ * Components
+ */
+import { BodyComponent }    from "./general/body.component";
 
 @NgModule({
   declarations: [
-    InventionsComponent
+      BodyComponent
   ],
   imports: [
       BrowserModule,
-      FormsModule
+      HomeModule,
+      RoutingModule,
   ],
   providers: [],
-  bootstrap: [InventionsComponent]
+  bootstrap: [BodyComponent]
 })
 export class AppModule { }
