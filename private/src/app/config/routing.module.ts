@@ -12,10 +12,7 @@ const routes: Routes = [
     {   path: '',
         component: HomeComponent    },
     {   path: ":page",
-        component: HomeComponent    },
-    {   path: "**",
-        component: HomeComponent,
-        data: {page:"not found"}   }];
+        component: HomeComponent    }];
 
 @NgModule({
     imports: [

@@ -6,7 +6,7 @@
   "apps": [
     {
       "root": "src",
-      "outDir": "dist",
+      "outDir": "../public",
       "assets": [
         "assets",
         "favicon.ico"
@@ -15,6 +15,8 @@
       "main": "main.ts",
       "polyfills": "polyfills.ts",
       "tsconfig": "../tsconfig.json",
+      "deployUrl": "/public/",
+      "baseHref": "/public/",
       "prefix": "app",
       "styles": [
         "styles/styles.css",

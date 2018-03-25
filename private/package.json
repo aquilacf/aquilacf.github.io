@@ -2,11 +2,16 @@
   "name": "aquilafreitas.com",
   "version": "0.0.1",
   "license": "MIT",
+  "config": {
+    "port": 8080,
+    "source": "/../"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "public": "node public.js"
   },
   "private": true,
   "dependencies": {
