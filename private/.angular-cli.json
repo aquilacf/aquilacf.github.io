@@ -1,0 +1,66 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "aquilafreitas.com"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "../public",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "tsconfig": "../tsconfig.json",
+      "deployUrl": "/public/",
+      "baseHref": "/public/",
+      "prefix": "app",
+      "styles": [
+        "styles/styles.css",
+        "styles/iconmoon.css"
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "lint": [
+    {
+      "project": "../tsconfig.json",
+      "exclude": "**/node_modules/**"
+    }
+  ],
+  "defaults": {
+    "serve": {
+      "port": 1337
+    },
+    "styleExt": "css",
+    "class": {
+      "spec": false
+    },
+    "component": {
+      "spec": false
+    },
+    "directive": {
+      "spec": false
+    },
+    "guard": {
+      "spec": false
+    },
+    "module": {
+      "spec": false
+    },
+    "pipe": {
+      "spec": false
+    },
+    "service": {
+      "spec": false
+    }
+  }
+}

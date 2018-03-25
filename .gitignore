@@ -2,3 +2,5 @@
 private/node_modules/
 private/build/
 public/
+
+.idea/

@@ -1,0 +1,38 @@
+{
+  "name": "aquilafreitas.com",
+  "version": "1.0.0",
+  "description": "Main website for aquilafreitas.com",
+  "main": "server",
+  "config": {
+    "port": 1337,
+    "source": "./src",
+    "filename": "app.js"
+  },
+  "scripts": {
+    "install": "node-gyp rebuild",
+    "dev": "clear && npx webpack-dev-server",
+    "build": "npx webpack --config webpack.config.js",
+    "build-debug": "npx webpack --config webpack.config.js --debug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:aquilacf/aquilacf.github.io.git"
+  },
+  "keywords": [
+    "main",
+    "webiste",
+    "aquilafreitas.com",
+    "aquila",
+    "freitas",
+    "site"
+  ],
+  "author": "Áquila Freitas",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.17",
+    "css-loader": "^0.28.7",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7",
+    "webpack-merge-and-include-globally": "^1.0.0"
+  }
+}

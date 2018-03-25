@@ -1,38 +1,38 @@
 {
   "name": "aquilafreitas.com",
-  "version": "1.0.0",
-  "description": "Main website for aquilafreitas.com",
-  "main": "server",
+  "version": "0.0.1",
+  "license": "MIT",
   "config": {
-    "port": 1337,
-    "source": "./src",
-    "filename": "app.js"
+    "port": 8080,
+    "source": "/../"
   },
   "scripts": {
-    "install": "node-gyp rebuild",
-    "dev": "clear && npx webpack-dev-server",
-    "build": "npx webpack --config webpack.config.js",
-    "build-debug": "npx webpack --config webpack.config.js --debug"
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build --prod",
+    "lint": "ng lint",
+    "public": "node public.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:aquilacf/aquilacf.github.io.git"
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^5.2.0",
+    "@angular/common": "^5.2.0",
+    "@angular/compiler": "^5.2.0",
+    "@angular/core": "^5.2.0",
+    "@angular/forms": "^5.2.0",
+    "@angular/http": "^5.2.0",
+    "@angular/platform-browser": "^5.2.0",
+    "@angular/platform-browser-dynamic": "^5.2.0",
+    "@angular/router": "^5.2.0",
+    "core-js": "^2.4.1",
+    "rxjs": "^5.5.6",
+    "zone.js": "^0.8.19"
   },
-  "keywords": [
-    "main",
-    "webiste",
-    "aquilafreitas.com",
-    "aquila",
-    "freitas",
-    "site"
-  ],
-  "author": "Áquila Freitas",
-  "license": "MIT",
   "devDependencies": {
-    "clean-webpack-plugin": "^0.1.17",
-    "css-loader": "^0.28.7",
-    "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.9.7",
-    "webpack-merge-and-include-globally": "^1.0.0"
+    "@angular/cli": "~1.7.3",
+    "@angular/compiler-cli": "^5.2.0",
+    "@angular/language-service": "^5.2.0",
+    "tslint": "^5.9.1",
+    "typescript": "~2.5.3"
   }
 }
