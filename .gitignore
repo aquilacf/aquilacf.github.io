@@ -1,6 +1,5 @@
 .DS_Store
 private/node_modules/
-private/build/
-public/
+#public/
 
 .idea/
