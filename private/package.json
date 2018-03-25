@@ -2,6 +2,7 @@
   "name": "aquilafreitas.com",
   "version": "1.0.0",
   "description": "My personal website",
+  "private": true,
   "main": "server.js",
   "config": {
     "port": 1337,
@@ -9,7 +10,8 @@
     "filename": "app.js"
   },
   "scripts": {
-    "dev": "dev"
+    "dev": "dev",
+    "start": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/aquilacf/aquilacf.github.io/issues"
   },
-  "homepage": "aquilafreitas.com"
+  "homepage": "aquilafreitas.com",
+  "devDependencies": {
+    "webpack": "^4.2.0"
+  }
 }
