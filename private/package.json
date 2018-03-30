@@ -3,15 +3,16 @@
   "version": "1.0.0",
   "description": "My personal website",
   "private": true,
-  "main": "server.js",
   "config": {
     "port": 1337,
     "source": "./src",
+    "public": "../public",
     "filename": "app.js"
   },
   "scripts": {
-    "dev": "dev",
-    "start": "webpack --config webpack.config.js"
+    "dev": "clear && npx webpack-dev-server",
+    "build": "npx webpack --config webpack.config.js --mode=production --devtool=none --optimize-minimize && rm -r ../public/css && cp -rf src/css ../public/ && rm -r ../public/img && cp -rf src/img ../public/",
+    "build-debug": "npx webpack --config webpack.config.js --mode=production --devtool=none --debug && rm -rv ../public/css && cp -rvf src/css ../public/ && rm -rv ../public/img && cp -rvf src/img ../public/"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,9 @@
   },
   "homepage": "aquilafreitas.com",
   "devDependencies": {
-    "webpack": "^4.2.0"
-  }
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "dependencies": {}
 }
