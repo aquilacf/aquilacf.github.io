@@ -2,11 +2,10 @@ module.exports = {
 
 	/**
 	 * Start emoji fall
-	 * @param  {$element} 	$el  	HTML Element
-	 * @param  {integer} 	type 	Typing mode 1-x;2-w;4-r;3-xw;5-xr;6-wr;7-xwr;
+	 * @param  {DOM} 		document 	Document
 	 * @return {void}
 	 */
-	start: function(event, d) {
+	start: function(d) {
 
 		 var list = ["astonished-face",
 					"crying-face",
@@ -84,6 +83,22 @@ module.exports = {
 	 */
 	getRandom: function(seed = 1) {
 		return parseInt(seed * (Math.random() % Math.PI));
+	},
+
+    /**
+     * Add click event to element
+     * @param  {$element} 	$el  		HTML Element
+     * @param  {DOM} 		document 	Document
+     * @return {void}
+     */
+	click: function($el, d) {
+
+		var self = this;
+
+		$el.addEventListener("click", function() {
+			self.start(d);
+		});
+
 	}
 
 };
