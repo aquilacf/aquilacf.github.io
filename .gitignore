@@ -2,3 +2,4 @@
 .idea/
 
 private/node_modules/
+private/package-lock.json
